@@ -1,0 +1,1 @@
+﻿curl -v -H "Content-Type: application/json" -X POST --data "@all3_original.json" http://server:port/api/Import

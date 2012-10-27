@@ -169,6 +169,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,8 +178,18 @@
     <Compile Include="Migrations\201210271239480_InitialMigration.Designer.cs">
       <DependentUpon>201210271239480_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201210271400425_AddEmployee.cs" />
+    <Compile Include="Migrations\201210271400425_AddEmployee.Designer.cs">
+      <DependentUpon>201210271400425_AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210271425428_AddEmployee2.cs" />
+    <Compile Include="Migrations\201210271425428_AddEmployee2.Designer.cs">
+      <DependentUpon>201210271425428_AddEmployee2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Input\Input.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -311,6 +322,12 @@
     <EmbeddedResource Include="Migrations\201210271239480_InitialMigration.resx">
       <DependentUpon>201210271239480_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210271400425_AddEmployee.resx">
+      <DependentUpon>201210271400425_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210271425428_AddEmployee2.resx">
+      <DependentUpon>201210271425428_AddEmployee2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -328,7 +345,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>52622</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51313/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

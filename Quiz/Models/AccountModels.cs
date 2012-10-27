@@ -16,6 +16,7 @@ namespace Quiz.Models
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 
     [Table("UserProfile")]
