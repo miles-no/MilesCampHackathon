@@ -223,6 +223,12 @@ namespace Quiz.Controllers
                 return RedirectToAction("ExternalLoginFailure");
             }
 
+            if (!result.UserName.EndsWith("miles.no"))
+            {
+                return RedirectToAction("ExternalLoginFailure");
+            }
+
+
             if (OAuthWebSecurity.Login(result.Provider, result.ProviderUserId, createPersistentCookie: false))
             {
                 return RedirectToLocal(returnUrl);
